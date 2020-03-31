@@ -6,7 +6,7 @@ module.exports = {
 	guildOnly: true,
 	execute(message) {
 		
-		if(Math.random(1, 100) > 10)
+		if(Math.random(1, 100) >= 10)
 		{
 			message.channel.send('Pong.');
 		}
