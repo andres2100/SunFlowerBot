@@ -6,14 +6,12 @@ module.exports = {
 	cooldown: 5,
 	guildOnly: true,
 	execute(message) {
-		var yes = Math.random(1,100);
+		var yes = Math.random(1, 100);
 		console.log(yes);
-		if(yes > 10)
-		{
+		if(yes > 0.15) {
 			message.channel.send('Pong.');
 		}
-		else
-		{
+		else {
 			message.channel.send('Ping. WAIT NO!. ok fine you win >:(');
 		}
 		
