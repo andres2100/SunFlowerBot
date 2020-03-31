@@ -5,8 +5,8 @@ module.exports = {
 	cooldown: 5,
 	guildOnly: true,
 	execute(message) {
-		int didwin = Math.random(1,100);
-		if(didwin > 10)
+		
+		if(Math.random(1, 100) > 10)
 		{
 			message.channel.send('Pong.');
 		}
