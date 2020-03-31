@@ -1,3 +1,4 @@
+/* eslint-disable no-var */
 /* eslint-disable no-trailing-spaces */
 module.exports = {
 	name: 'ping',
@@ -5,8 +6,9 @@ module.exports = {
 	cooldown: 5,
 	guildOnly: true,
 	execute(message) {
-		
-		if(Math.random(1, 100) >= 10)
+		var yes = Math.random(1,100);
+		console.log(yes);
+		if(yes > 10)
 		{
 			message.channel.send('Pong.');
 		}
